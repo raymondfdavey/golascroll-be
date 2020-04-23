@@ -4,7 +4,7 @@ exports.fetchEvents = (offset) => {
   return connection
     .select("*")
     .from("gola_info")
-    .limit(10)
+    .limit(5)
     .offset(offset)
     .then((result) => result);
 };
